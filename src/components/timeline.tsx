@@ -31,7 +31,7 @@ export default function Timeline(props: Omit<SectionProps, 'id' | 'title'>) {
             header="Jan 2021 - Oct 2022"
             title="Staff Software Engineer at AuroraTech"
             subtitle="Frontend Team Lead"
-            body="Led a team of 5 frontend engineers to develop a high-performance trading app, processing 100,000+ quote per second, and its content management system to handle internationalization setting, product management, user management, and deployment. Executed rigorous code reviews and provides constructive feedback to ensure the quality of the codebase.."
+            body="Led a team of 5 frontend engineers to develop a high-performance trading app, processing 100,000+ quote per second, and its content management system to handle internationalization setting, product management, user management, and deployment. Executed rigorous code reviews and provides constructive feedback to ensure the quality of the codebase."
             link="https://101invest.app/"
             tags={[
               'Next.js',
@@ -55,7 +55,7 @@ export default function Timeline(props: Omit<SectionProps, 'id' | 'title'>) {
           <Card
             header="2017 - 2020"
             title="Senior Software Engineer at AuroraTech"
-            body="Delivered high-quality products for clients from various industry including finance and entertainment. Worked closely with clients to understand their needs and provide technical solutions. "
+            body="Delivered high-quality products for clients from various industry including finance and entertainment. Worked closely with clients to understand their needs and provide technical solutions."
             tags={[
               'React',
               'React Native',
@@ -97,7 +97,7 @@ export default function Timeline(props: Omit<SectionProps, 'id' | 'title'>) {
         </li>
         <li className="mb-12">
           <Card
-            header="Jan 2022 - Present"
+            header="2012 - 2016"
             title="Bachelor at National Chengchi University"
             subtitle="Taipei, Taiwan"
             body="Major: Computer Science, Minor: Japanese"

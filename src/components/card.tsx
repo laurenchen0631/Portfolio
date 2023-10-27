@@ -26,7 +26,7 @@ export default function Card({link, header, title, subtitle, body, tags = []}: C
     } else if (isExternal) {
       return (
         <a
-          className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  text-base"
+          className="inline-flex items-center font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  text-base"
           href={link}
           target="_blank"
           rel="noopener">
