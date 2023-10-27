@@ -28,7 +28,7 @@ export default function Timeline(props: Omit<SectionProps, 'id' | 'title'>) {
         </li>
         <li className="mb-12">
           <Card
-            header="Jan 2021 - Oct 2022"
+            header="Jan 2021 - Oct 2021"
             title="Staff Software Engineer at AuroraTech"
             subtitle="Frontend Team Lead"
             body="Led a team of 5 frontend engineers to develop a high-performance trading app, processing 100,000+ quote per second, and its content management system to handle internationalization setting, product management, user management, and deployment. Executed rigorous code reviews and provides constructive feedback to ensure the quality of the codebase."
