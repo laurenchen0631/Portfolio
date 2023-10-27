@@ -5,11 +5,9 @@ export default function About(props: Omit<SectionProps, 'id' | 'title'>) {
     <Section id="about" title="About" {...props}>
       <div>
         <p className="mb-4">
-          A versatile software engineer with a Master degree from the University of Southern
-          California, specializing in full-stack development. With over 5 years of experience in
-          software development, I excel in web development and cross-platform applications.
-          Proficient in leveraging cutting-edge technologies such as TypeScript, WebAssembly,
-          Golang, and Rust to deliver outstanding results.
+          With over 5 years of experience in software development, I excel in web development and
+          cross-platform applications. Proficient in leveraging cutting-edge technologies such as
+          TypeScript, WebAssembly, Golang, and Rust to deliver outstanding results.
         </p>
         <p className="mb-4">
           Since 2021, I made the decision to venture beyond frontend development, embarking on a

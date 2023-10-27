@@ -55,7 +55,7 @@ export default function Timeline(props: Omit<SectionProps, 'id' | 'title'>) {
           <Card
             header="2017 - 2020"
             title="Senior Software Engineer at AuroraTech"
-            body="Delivered high-quality products for clients from various industry including finance and entertainment. Worked closely with clients to understand their needs and provide technical solutions."
+            body="Delivered high-quality products for clients from various industry including finance and entertainment. Worked closely with clients to understand their needs and provide technical solutions. Skilled in React Native, TypeScript, microservices architecture, and Go. Achieved up to 70% code reusability between web and mobile platforms, which improved efficiency and reduced development costs."
             tags={[
               'React',
               'React Native',
@@ -80,7 +80,7 @@ export default function Timeline(props: Omit<SectionProps, 'id' | 'title'>) {
             title="Intern at Fandora"
             subtitle="Part-time frontend developer"
             link="https://www.fandorashop.com/en"
-            body="Built content management system for Fandora, a fashion brand in Taiwan. Delivered text editor and image editor using Canvas API for the business partner to customize the product image and preview the result in real-time."
+            body="Built content management system for Fandora, a fashion brand in Taiwan. Delivered text editor and image editor using Canvas API for the business partner to customize the product image and preview the result in real-time. Optimized application performance with Webpack, and collaborating with backend developers to implement efficient GraphQL queries."
             tags={[
               'React',
               'Node.js',
