@@ -10,26 +10,26 @@ export interface SectionProps extends PropsWithChildren {
 
 export default function Section({id, title, onVisible, children}: SectionProps) {
   const ref = useRef<HTMLDivElement>(null);
+  console.log('section', id, title);
 
   useEffect(() => {
-    if (!onVisible) return;
+    // if (!onVisible) return;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.intersectionRatio > 0.95) {
+          if (entry.intersectionRatio > 0.25) {
             console.log('visible', id);
-            onVisible();
+            // onVisible();
           }
         });
       },
       {
         root: null,
-        threshold: 1,
+        threshold: 0.25,
       },
     );
 
     observer.observe(ref.current!);
-
     return () => {
       observer.disconnect();
     };

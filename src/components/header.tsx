@@ -1,5 +1,6 @@
 import {ReactNode} from 'react';
 import Icon, {IconProps} from './icon/icon';
+import clsx from 'clsx';
 
 interface SocialMedia {
   name: IconProps['name'];
@@ -41,16 +42,29 @@ const Header: React.FC<HeaderProps> = ({name, title, socialMedias, sections, act
 
       <nav className="nav hidden lg:block">
         <ul className="mt-16 w-max">
-          {sections.map(({id, title}) => (
-            <li key={id}>
-              <a className="group flex items-center py-3" href={`#${id}`}>
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none" />
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
-                  {title}
-                </span>
-              </a>
-            </li>
-          ))}
+          {sections.map(({id, title}) => {
+            const active = activeSection === id;
+
+            return (
+              <li key={id}>
+                <a className="group flex items-center py-3" href={`#${id}`}>
+                  <span
+                    className={clsx(
+                      'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none',
+                      active && 'w-16 bg-slate-200',
+                    )}
+                  />
+                  <span
+                    className={clsx(
+                      'nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200',
+                      active && '!text-slate-200',
+                    )}>
+                    {title}
+                  </span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </header>

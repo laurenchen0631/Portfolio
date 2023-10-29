@@ -87,16 +87,16 @@ export default function Projects(props: Omit<SectionProps, 'id' | 'title'>) {
 
         <li className="mb-12">
           <Card
-            // header={
-            //   <Image
-            //     alt="GeoRush"
-            //     src="/IMG_3515.jpeg"
-            //     width={200}
-            //     height={48}
-            //     className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2 sm:translate-y-1"
-            //   />
-            // }
-            link="https://github.com/laurenchen0631/GeoRush"
+            header={
+              <Image
+                alt="GeoRush"
+                src="/img/georush.png"
+                width={200}
+                height={48}
+                className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2 sm:translate-y-1"
+              />
+            }
+            link="/projects/georush"
             title="GeoRush"
             body="A running game that was made by Unity on WebGL."
             tags={['Unity', 'C#', 'WebGL', 'Game Development']}
@@ -156,15 +156,15 @@ export default function Projects(props: Omit<SectionProps, 'id' | 'title'>) {
 
         <li className="mb-12">
           <Card
-            // header={
-            //   <Image
-            //     alt=""
-            //     src="/IMG_3515.jpeg"
-            //     width={200}
-            //     height={48}
-            //     className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2 sm:translate-y-1"
-            //   />
-            // }
+            header={
+              <Image
+                alt=""
+                src="/img/panorama.jpg"
+                width={200}
+                height={48}
+                className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2 sm:translate-y-1"
+              />
+            }
             link="https://github.com/studentBC/panoramaProject"
             title="Video Panorama"
             body="A video panorama generator that can generate a panorama image from a video."

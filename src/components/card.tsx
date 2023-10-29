@@ -42,6 +42,7 @@ export default function Card({link, header, title, subtitle, body, tags = []}: C
           className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  text-base">
           <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
           {title}
+          <Icon name="arrow-right" className="inline-block h-4 w-4 ml-2" />
         </Link>
       );
     }
