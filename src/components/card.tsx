@@ -6,7 +6,7 @@ import Icon from './icon/icon';
 export interface CardProps {
   link?: string;
   external?: boolean;
-  header: ReactNode;
+  header?: ReactNode;
   title: ReactNode;
   subtitle?: ReactNode;
   body: ReactNode;
