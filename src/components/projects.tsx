@@ -158,7 +158,7 @@ export default function Projects(props: Omit<SectionProps, 'id' | 'title'>) {
           <Card
             header={
               <Image
-                alt=""
+                alt="panorama"
                 src="/img/panorama.jpg"
                 width={200}
                 height={48}
@@ -174,15 +174,15 @@ export default function Projects(props: Omit<SectionProps, 'id' | 'title'>) {
 
         <li className="mb-12">
           <Card
-            // header={
-            //   <Image
-            //     alt=""
-            //     src="/IMG_3515.jpeg"
-            //     width={200}
-            //     height={48}
-            //     className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2 sm:translate-y-1"
-            //   />
-            // }
+            header={
+              <Image
+                alt="rnews"
+                src="/img/rnews.png"
+                width={200}
+                height={48}
+                className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2 sm:translate-y-1"
+              />
+            }
             link="https://github.com/laurenchen0631/RNews"
             title="RNews"
             body="A news app built with React Native."
