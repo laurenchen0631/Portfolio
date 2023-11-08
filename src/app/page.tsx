@@ -4,11 +4,11 @@ import About from '@/components/about';
 import Header from '@/components/header';
 import Projects from '@/components/projects';
 import Timeline from '@/components/timeline';
-import {useParams, usePathname} from 'next/navigation';
+import {useParams, usePathname, useRouter} from 'next/navigation';
 import {useCallback, useState} from 'react';
 
 export default function Home() {
-  const [section, setSection] = useState('about');
+  const [section, setSection] = useState(location.hash ? location.hash.slice(1) : 'about');
 
   const reachAbout = useCallback(() => {
     setSection('about');
@@ -19,7 +19,6 @@ export default function Home() {
   const reachTimeline = useCallback(() => {
     setSection('timeline');
   }, []);
-  // console.log(section);
 
   return (
     <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
