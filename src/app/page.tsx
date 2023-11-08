@@ -4,11 +4,12 @@ import About from '@/components/about';
 import Header from '@/components/header';
 import Projects from '@/components/projects';
 import Timeline from '@/components/timeline';
-import {useParams, usePathname, useRouter} from 'next/navigation';
+import {useParams, usePathname, useRouter, useSearchParams} from 'next/navigation';
 import {useCallback, useState} from 'react';
 
 export default function Home() {
-  const [section, setSection] = useState(location.hash ? location.hash.slice(1) : 'about');
+  const [section, setSection] = useState('about');
+  console.log(useSearchParams(), useParams(), usePathname());
 
   const reachAbout = useCallback(() => {
     setSection('about');
